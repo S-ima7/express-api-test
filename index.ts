@@ -1,9 +1,9 @@
-import express from "express";
-const app = express();
-const port = process.env.PORT || 8080;
+import express from 'express'
+const app = express()
+const port = process.env.PORT || 8080
 
 // "/" へのアクセス時に HTML を返す
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
   // Google FontsからNoto Sans JPを読み込み、CSSで適用
   const html = `
 <!DOCTYPE html>
@@ -34,11 +34,11 @@ app.get("/", (req, res) => {
   <h1>今日も大好き！！</h1>
 </body>
 </html>
-  `;
+  `
 
-  res.send(html);
-});
+  res.send(html)
+})
 
 app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
-});
+  console.log(`Server listening on port ${port}`)
+})
