@@ -3,6 +3,7 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 // "/" へのアクセス時に HTML を返す
+// ここでコンフリクトを起こす
 app.get("/", (req, res) => {
   // Google FontsからNoto Sans JPを読み込み、CSSで適用
   const html = `
