@@ -1,0 +1,13 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif; /* フォント指定 */
+    margin: 0;
+    padding: 20px;
+    background-color: #595555;
+  }
+  
+  h1 {
+    font-size: 48px;
+    color: #f535b5;
+    margin: 0;
+  }
+  
